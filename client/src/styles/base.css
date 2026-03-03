@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1000px 400px at 8% -10%, #d5eee8, transparent 60%),
+    radial-gradient(860px 360px at 108% 15%, #d7e5f8, transparent 56%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 0.95rem;
+  margin: 12px 0 6px;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+input,
+textarea,
+button {
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 8px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease, border-color 0.16s ease;
+}
+
+button:not(:disabled):hover {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(11, 143, 130, 0.25);
+}
+
+button:not(:disabled):focus-visible {
+  outline: 2px solid #2a8eff;
+  outline-offset: 2px;
+}
+
+button.secondary {
+  background: white;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+button.secondary:not(:disabled):hover {
+  background: #f2f8ff;
+  border-color: #b8cce6;
+  box-shadow: 0 6px 14px rgba(60, 90, 130, 0.16);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.86rem;
+}
